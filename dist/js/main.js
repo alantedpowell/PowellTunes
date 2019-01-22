@@ -25,7 +25,7 @@ $(function() {
 });
 
 // Smooth Scrolling
-$(".cf a").on("click", function(event) {
+$(".cf a").on("click", function(event) { // ".cf a" is the class -- .on = Function -- "click" = Action, 
   if (this.hash !== "") {
     event.preventDefault();
 
@@ -33,7 +33,7 @@ $(".cf a").on("click", function(event) {
 
     $("html, body").animate(
       {
-        scrollTop: $(hash).offset().top - 40
+        scrollTop: $(hash).offset().top - 40 // "top - 40" will offset the scrolling distance
       },
       800,
       function() {
